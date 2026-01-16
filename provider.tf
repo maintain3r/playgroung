@@ -2,6 +2,7 @@ terraform {
   cloud {
 
     organization = "tfhub"
+    project = "dev"
 
     workspaces {
       name = "tf-github-playgroung"
