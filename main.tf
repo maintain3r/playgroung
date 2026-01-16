@@ -1,6 +1,6 @@
 resource "random_id" "mixer" {
   for_each = toset(["golden","silver","bronze","platinum"])
-  byte_length = var.mixer_byte_length
+  byte_length = var.mixer_byte_length +1
   prefix      = "${each.value}-${var.mixer_prefix}"
 }
 
